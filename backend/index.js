@@ -17,7 +17,7 @@ const app = express();
 
 const cors = require('cors');
 app.use(cors({
-  origin: 'https://zerodha-dashboard-siw2.onrender.com' // Replace this later after deploying frontend
+  origin: 'https://your-frontend-url.onrender.com' // Replace this later after deploying frontend
 }));
 app.use(bodyParser.json());
 
