@@ -38,3 +38,40 @@ code {
   border-radius: 10px;
   border: none;
 }
+
+.phone-input-container {
+      display: flex;
+      align-items: center;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      width: 420px;
+      padding: 5px 10px;
+      font-family: Arial, sans-serif;
+      margin-left: 95px;
+      margin-top: 15px;
+      height: 65px;
+    }
+
+    .flag {
+      width: 30px;
+      height: 20px;
+      margin-right: 8px;
+    }
+
+    .country-code {
+      margin-right: 10px;
+      font-size: 20px;
+      color: #333;
+    }
+
+    .phone-input {
+      border: none;
+      outline: none;
+      font-size: 20px;
+      flex: 1;
+      color: #333;
+    }
+
+    .phone-input::placeholder {
+      color: #ccc;
+    }
