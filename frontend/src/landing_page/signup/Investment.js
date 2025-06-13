@@ -58,7 +58,7 @@ function Investment() {
         </div>
       </div>
       <div className="text-center">
-        <button className="btn btn-primary fs-4 " style={{width:"280px",height:"55px", opacity:"0.9"}}>Explore Investments</button>
+        <button className="btn btn-primary fs-4 " style={{width:"280px",height:"55px", opacity:"0.9" , marginBottom:"100px"}}>Explore Investments</button>
       </div>
     </div>
   );
