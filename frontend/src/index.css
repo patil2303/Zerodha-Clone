@@ -75,3 +75,60 @@ code {
     .phone-input::placeholder {
       color: #ccc;
     }
+
+    .custom-tabs .nav-link {
+  border: none;
+  color: #555;
+  font-weight: 500;
+  font-size: 18px;
+  padding: 10px 20px;
+  transition: 0.2s;
+  background-color: transparent;
+}
+
+.custom-tabs .nav-link.active {
+  color: #1976d2;
+  border-bottom: 2px solid #1976d2;
+  background-color: transparent;
+}
+
+.card.shadow-sm {
+  border-radius: 10px;
+  overflow-x: auto;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  margin-top: 10px;
+}
+
+.custom-table {
+  width: 100%;
+  min-width: 800px;
+  font-size: 16px;
+  table-layout: auto;
+  border-collapse: collapse;
+}
+
+.custom-table th,
+.custom-table td {
+  padding: 16px 20px;
+  vertical-align: middle;
+  text-align: left;
+  color: #444;
+}
+
+.custom-table thead tr {
+  background-color: #f8f9fa;
+  font-weight: 600;
+}
+
+.custom-table tbody tr:nth-child(even) {
+  background-color: #f7f7f7; /* Light grey row */
+}
+
+.custom-table tbody tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+.custom-table td[colspan] {
+  font-style: italic;
+  color: #555;
+}

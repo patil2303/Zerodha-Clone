@@ -3,14 +3,12 @@ import React from "react";
 function Hero() {
   return (
     <div className="container">
-      <div className="row p-5 mt-5 border-bottom text-center">
-        <h1>Pricing</h1>
-        <h3 className="text-muted mt-3 fs-5">
-          Free equity investments and flat ₹20 traday and F&O trades
-        </h3>
+      <div className="row p-5 mt-3 text-center">
+        <h1 style={{fontSize:"55px", opacity:"0.9"}}>Charges</h1>
+        <h3 className="text-muted mt-3 fs-5">List of all charges and taxes</h3>
       </div>
       <div className="row p-5 mt-5 text-center">
-        <div className="col-4 p-4">
+        <div className="col-4 p-5">
           <img src="media/images/pricingEquity.svg" />
           <h1 className="fs-3">Free equity delivery</h1>
           <p className="text-muted">
@@ -18,7 +16,7 @@ function Hero() {
             0 brokerage.
           </p>
         </div>
-        <div className="col-4 p-4">
+        <div className="col-4 p-5">
           <img src="media/images/intradayTrades.svg" />
           <h1 className="fs-3">Intraday and F&O trades</h1>
           <p className="text-muted">
@@ -26,7 +24,7 @@ function Hero() {
             intraday trades across equity, currency, and commodity trades.
           </p>
         </div>
-        <div className="col-4 p-4">
+        <div className="col-4 p-5">
           <img src="media/images/pricingEquity.svg" />
           <h1 className="fs-3">Free direct MF</h1>
           <p className="text-muted">
