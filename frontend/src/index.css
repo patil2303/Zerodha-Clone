@@ -158,3 +158,18 @@ code {
   color: rgb(87, 132, 255);
 
 }
+
+.acc-links a {
+  margin-left: 23px;
+}
+
+.nav-form a {
+  font-size: 18px;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
+.nav-form a:hover {
+  opacity: 1;
+  
+}
