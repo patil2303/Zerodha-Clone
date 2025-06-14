@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./index.css";
+import ScrollToTop from "./ScrollToTop";
 
 import HomePage from "./landing_page/home/HomePage";
 import SignupPage from "./landing_page/signup/SignupPage";
@@ -16,7 +17,9 @@ import Footer from "./landing_page/Footer";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
+  
   <BrowserRouter>
+  <ScrollToTop/>
     <Navbar />
     <Routes>
       <Route path="/" element={<HomePage />} />

@@ -39,10 +39,13 @@ function PricingTable() {
         <table className="table custom-table mb-0">{renderTable()}</table>
       </div>
 
-      <div className="mt-3">
-        <a href="#" className="text-primary fw-medium">
-          Calculate your costs upfront using our brokerage calculator
+      <div className="mt-5 text-center fs-4">
+        <p style={{ opacity:"0.9"}}>
+          <a href="#" className="text-primary fw-medium" style={{textDecoration:"none",}}>
+          Calculate your costs upfront  
         </a>
+          &nbsp;using our brokerage calculator
+        </p>
       </div>
     </div>
   );

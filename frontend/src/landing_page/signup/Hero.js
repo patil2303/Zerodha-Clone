@@ -1,5 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
+
 function Hero() {
+  const [phone, setPhone] = useState("");
+  const navigate = useNavigate();
+
+  
   return (
     <div className="container">
       <div className="row mt-5 text-center">
@@ -13,7 +19,8 @@ function Hero() {
         <div className="row mt-5 mb-5">
           <div className="col-6">
             <img
-              src="media/images/account_open.svg" alt="image"
+              src="media/images/account_open.svg"
+              alt="image"
               style={{ marginLeft: "100px", width: "95%" }}
             />
           </div>
@@ -34,7 +41,7 @@ function Hero() {
                 fontWeight: "400",
                 marginRight: "135px",
                 marginTop: "20px",
-                marginBottom:"20px"
+                marginBottom: "20px",
               }}
             >
               Or track your existing application
@@ -53,8 +60,10 @@ function Hero() {
                 maxLength="10"
                 pattern="[0-9]*"
                 inputMode="numeric"
-                onInput={(e) => {
-                  e.target.value = e.target.value.replace(/[^0-9]/g, "");
+                value={phone}
+                onChange={(e) => {
+                  const value = e.target.value.replace(/[^0-9]/g, "");
+                  setPhone(value);
                 }}
               />
             </div>
@@ -67,14 +76,22 @@ function Hero() {
                 marginTop: "40px",
                 marginRight: "170px",
               }}
+              onClick={() => {
+                // You can optionally validate the number first
+                window.location.href =
+                  "https://zerodha-dashboard-siw2.onrender.com";
+              }}
             >
-              Get OTP
+              Signup
             </button>
-            <h6 style={{marginTop:'40px',marginLeft:"40px", opacity:'0.7'}}>
+
+            <h6
+              style={{ marginTop: "40px", marginLeft: "40px", opacity: "0.7" }}
+            >
               By proceeding, you agree to the Zerodha <a href="/">terms</a> &{" "}
               <a href="/">privacy policy</a>
             </h6>
-          </div> 
+          </div>
         </div>
       </div>
     </div>
